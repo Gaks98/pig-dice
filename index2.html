@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script type="text/javascript">
     </script>
 </head>
@@ -27,8 +27,25 @@
                 <input type="text" required class=" player2 form-control" name="Player2"
                     placeholder="Enter Player Two Name" value="">
             </form>
-            <button type="submit" id="play" class="btn btn-primary play"name="submit">Play</button>
+            <button type="submit" id="play" class="btn btn-primary play" name="submit">Play</button>
         </div>
+        <div class="box">
+            <div class="toggle"><span></span></div>
+        <pre>
+                GAME RULES:
+
+                -The game has 2 player, playing in rounds
+
+                -In each turn, the player rolls a dice as many times as he wishes. Each result gets added to his ROUND score.
+
+                -BUT, if a player rolls a 1, all his scores in that round get erased. After that, its the next player's turn.
+
+                -The player can choose to "HOLD", which means that the round's score gets added to his previous score. After that, its the other players turn
+
+                -The first player to reach 100 points on his total score, wins
+        </pre>
+    </div>
+
     </div>
 
 

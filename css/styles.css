@@ -1,7 +1,11 @@
 body{
-    background: #060c21;
+    background: -webkit-linear-gradient(left,#e91e63, #e91e63 50%, #5d02ff 30%, #5d02ff);
+    , 
     color: #fff;
 }
 .image-dices{
     height: 100px;
+}
+#player1,#player2{
+    margin-top: 15%;
 }
