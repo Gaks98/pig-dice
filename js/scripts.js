@@ -15,7 +15,7 @@ function isPlaying() {
 isPlaying.prototype.firstRoll = function () {
     if (this.roll === 1) {
         this.currentScore = 0;
-        swal("OOPS!", "Your turn is over", + this.playerName);
+        swal("OOPS!", "Your turn is over" + this.playerName,"error");
     } else {
         this.currentScore += this.roll;
     }
@@ -23,11 +23,11 @@ isPlaying.prototype.firstRoll = function () {
 isPlaying.prototype.holdBtn = function () {
     this.totalScore += this.currentScore;
     this.currentScore = 0;
-    alert(this.playerName + ",Change player");
+    swal("Next player!","","success");
 }
 isPlaying.prototype.theWinner = function () {
     if (this.totalScore >= 100) {
-        alert("Bravo! " + this.playerName + ",you are the winner!");
+        swal("Congratulation",+ this.playerName+ "You are the WINNER!!",  "Success");
     }
 }
 isPlaying.prototype.restart = function () {
@@ -61,6 +61,10 @@ $(document).ready(function () {
         $("#secondPlayerName").text(secondPlayerName);
         firstPlayer.playerName = firstPlayerName;
         secondPlayer.playerName = secondPlayerName;
+        swal("Welcome! ",
+      "Have fun!", "success").then(function() {
+      window.location = "index1.html";
+    });
     });
     $("#player1Turn").click(function (event) {
         firstPlayer.roll = randomDice();
