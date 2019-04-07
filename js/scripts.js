@@ -64,14 +64,14 @@ $(document).ready(function () {
     });
     $("#player1Turn").click(function (event) {
         firstPlayer.roll = randomDice();
-        $("#myDiv1").html("<img src='img/dice" + firstPlayer.roll + ".png'></img>");
+        $("#myDiv1").html("<img class='image-dices' src='img/dice" + firstPlayer.roll + ".png'></img>");
         $("#dice1").text(firstPlayer.roll);
         firstPlayer.firstRoll();
         $("#current1").text(firstPlayer.currentScore);
     });
     $("#player2Turn").click(function (event) {
         secondPlayer.roll = randomDice();
-        $("#myDiv2").html("<img src='img/dice" + secondPlayer.roll + ".png'></img>");
+        $("#myDiv2").html("<img class='image-dices'src='img/dice" + secondPlayer.roll + ".png'></img>");
         $("#dice2").text(secondPlayer.roll);
         secondPlayer.firstRoll();
         $("#current2").text(secondPlayer.currentScore);
