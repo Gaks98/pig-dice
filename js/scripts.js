@@ -15,7 +15,7 @@ function isPlaying() {
 isPlaying.prototype.firstRoll = function () {
     if (this.roll === 1) {
         this.currentScore = 0;
-        alert(this.playerName + ",your roll is a 1! Your turn is over!!")
+        swal("OOPS!", "Your turn is over", + this.playerName);
     } else {
         this.currentScore += this.roll;
     }
