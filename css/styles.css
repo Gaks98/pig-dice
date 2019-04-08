@@ -9,3 +9,6 @@ body{
 #player1,#player2{
     margin-top: 15%;
 }
+#row2{
+    visibility: hidden;
+}

@@ -51,7 +51,7 @@ var reset = function () {
 
 $(document).ready(function () {
     $("#play").click(function (event) {
-        $(".row").toggle();
+        $(".row").css("visibility", "visible")
         event.preventDefault();
         firstPlayer = new isPlaying(true);
         secondPlayer = new isPlaying(false);

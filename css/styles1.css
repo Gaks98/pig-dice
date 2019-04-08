@@ -6,6 +6,40 @@ body
     color: #fff;
 	font-family: verdana;
 }
+#center {
+    margin-top: 11%;
+    width: 300px;
+    height: auto;
+    color: white;
+    margin-top: 80px;
+  }
+  #center h1 {
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid #e91e63;
+    margin-bottom: 50px;
+    padding: 13px 0;
+  }
+#inputbox1 #inputbox2 {
+    width: 50%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #e91e63;
+  }
+  
+#inputbox1 #inputbox2 input {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+  }
+  
 .box
 {
 	position: relative;
@@ -14,7 +48,7 @@ body
     color: black;
 	background: #fff;
 	position: absolute;
-	top: calc(50% - 60px);
+	top: calc(50%  60px);
 	left: calc(50% - 210px);
 	padding: 20px;
 	transition: 1s;
@@ -45,7 +79,7 @@ body
 	left: 0;
 	width: 40px;
 	height: 40px;
-	background: #2e80ff;
+	background: #e91e63;
 	transition: 1s;
 }
 .toggle span
@@ -81,4 +115,20 @@ body
 {
 	transform: rotate(225deg);
 }
-
+#row2{
+    visibility: hidden;
+}
+.image-dices{
+    height: 100px;
+}
+#player1,#player2{
+    margin-top: 10%;
+    
+}
+#row2{
+    visibility: hidden;
+}
+.pig-pic{
+    height: 120px;
+    display: block;
+}
