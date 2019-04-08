@@ -51,6 +51,7 @@ var reset = function () {
 
 $(document).ready(function () {
     $("#play").click(function (event) {
+        $(".row").toggle();
         event.preventDefault();
         firstPlayer = new isPlaying(true);
         secondPlayer = new isPlaying(false);
@@ -61,10 +62,6 @@ $(document).ready(function () {
         $("#secondPlayerName").text(secondPlayerName);
         firstPlayer.playerName = firstPlayerName;
         secondPlayer.playerName = secondPlayerName;
-        swal("Welcome! ",
-      "Have fun!", "success").then(function() {
-      window.location = "index1.html";
-    });
     });
     $("#player1Turn").click(function (event) {
         firstPlayer.roll = randomDice();
@@ -93,5 +90,15 @@ $(document).ready(function () {
         $("#current2").empty();
         $("#dice2").empty();
         secondPlayer.theWinner();
+    });
+});
+
+// UI HELP TAB
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+    })
+    $('.toggle').click(function(){
+        $('.box').toggleClass('active')
     });
 });
