@@ -1,11 +1,13 @@
-# Quiz Board
-This is a Quiz board website that asks users JavaScript questions, and gives them a certain message regarding the action they have taken while going through the website. Created on the 30th March 2019 By Yvonne Gakii Gitonga.
+# Pig Dice
+This is a Pig dice web game that challenges users to play again each other by rolling a dice. Created on the 30th March 2019 By Yvonne Gakii Gitonga.
 
 # Description
-Quiz Board is a web application that allows anyone to users to first fill in their credentials before accessing the JavaScript questions. The website has a count down that is set to show the dead line of the day and time the test trial will end. Before access to the test the user MUST fill both their names and email, failure to adhere to this leads to an error pop up message that alerts them on what they have done wrong. Else if they fill all the required input spaces they get a welcome pop up message that welcomes them and sends them to the next page which is the quiz page on clicking okay on the pop-up.
+This is a Pig dice web game that challenges users to play again each other by rolling a dice.The game has 2 player, playing in rounds.
+In each turn, the player rolls a dice as many times as he wishes. Each result gets added to his ROUND score.BUT, if a player rolls a 1, all his scores in that round get erased. After that, its the next player's turn.The player can choose to "HOLD", which means that the round's score gets added to his previous score. After that, its the other players turn
+The first player to reach 100 points on his total score, wins
 
 # Setup/Installation Requirements
-No set up requirements or Installation needed to view this website. The site is fully run on its own originally set codes and links and does not depend on any other code to function. In case you want to use the codes you can clone it here: https://github.com/Gaks98/quiz-board.git.
+No set up requirements or Installation needed to view this website. The site is fully run on its own originally set codes and links and does not depend on any other code to function. In case you want to use the codes you can clone it here: https://github.com/Gaks98/pig-dice.git.
 
 # Known Bugs
 The website is not suitable for phones less than 200px of width cause that will be extra small. Not that they will not be able to view it but because it may not look as stunning as on other devices.
@@ -23,29 +25,23 @@ The website is not suitable for phones less than 200px of width cause that will 
 
 | Behaviour       | Input           | Output          |
 | :-------------: | :-------------: | :-------------: |
-| 5 correct       | score === 100   | Great job!      |
+| roll 1          | roll === 1      | Next player     |
 |                 |                 |                 |
-| 4 correct       | score >= 80     |  aim higher     |
-|                 |       &&        |                 |
-|                 | score < 100     |                 |
+| roll 2-6        | roll != 1       |points add up    |
 |                 |                 |                 |
-| 3 correct       | score >= 60     | fairly done     |
-|                 |      &&         |                 |
-|                 | score < 80      |                 |
-|                 |                 |                 |
-| 2 correct       | score >= 40     |  poorly done    |
-|                 |      &&         |                 |
-|                 | score < 60      |                 |
-|                 |                 |                 |
-| 1 or 0 correct  | score < 40      | Get serious     |
+| first to reach  | roll >= 100     |     Winner      |
+|  100            |                 |                 |
+| hold            | next player     | next player     |
+|                 |                 | and points      |
+|                 |                 |   add up        |
 |                 |                 |                 |
 
 ## How to run
-1. Make sure to input all fields in the login form. Take test before deadline of the countdown.
+1. Make sure to input all fields in the input field. Take test before deadline of the countdown.
 2. After every action remember to click either the submit, okay or done button for you to see the output.
 
 # Live Site
-View my live site here:https://gaks98.github.io/quiz-board/
+View my live site here:https://gaks98.github.io/pig-dice/
 
 # Support and contact details
 In case you run into some issues will trying to use this site feel free to reach me at yvonnegax98@gmail.com
