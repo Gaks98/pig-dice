@@ -1,86 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Pig Dice</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles1.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="js/scripts.js"></script>
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pig dice landing page</title>
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4" id="center">
-            <h1>Pig Dice</h1>
-            <input type="text" id="inputbox1" required class="player1 form-control" name="Player1"
-                placeholder="Player1's Name" value=""><br>
-            <input type="text" id="inputbox2" required class=" player2 form-control" name="Player2"
-                placeholder="Player2's Name" value=""><br>
-            <button type="submit" id="play" class="btn btn-danger play" name="submit">Play</button>
-            <br><br>
-            <h6> Need HELP??</h6>
-            <div class="box">
-                <div class="toggle"><span></span></div>
-                <p>
-                    <b>GAME RULES:</b>
-                    -The game has 2 player, playing in rounds.
-                    -In each turn, the player rolls a dice as many times as he wishes. Each result gets added to his
-                    ROUND
-                    score.
-                    -BUT, if a player rolls a 1, all his scores in that round get erased. After that, its the next
-                    player's
-                    turn.
-                    -The player can choose to "HOLD", which means that the round's score gets added to his previous
-                    score.
-                    After that, its the other players turn
-                    -The first player to reach 100 points on his total score, wins
-                </p>
+    <div class="container-fluid">
+                <section>
+                    <video src="img/smoke.mp4" autoplay muted></video>
+                    <h1>
+                        
+                        <span>D</span>
+                        <span>i</span>
+                        <span>C</span>
+                        <span>E</span>
+                        <span>!</span>
+                        <br><br><br><br>
+                     <a href="index.html">
+                        <span>P</span>
+                        <span>L</span>
+                        <span>A</span>
+                        <span>Y</span></a>
+                    </h1>
+                </section>
+               
             </div>
-        </div>
-        <div class="col-md-4"></div>
-    </div>
-    <div class="row" id=row2>
-        <div class="col-sm-3"></div>
-        <div class="col-sm-4" id="player1">
-            <h2><span id="firstPlayerName"></span> </h2>
-            <div class="pigs"><img class="pig-pic" src="https://bit.ly/2G7Dly5"><br></div>
-            <button id="player1Turn" class="btn btn-danger" name="button">Roll</button>
-            <button id="player1Hold" class="btn btn-danger" name="button">Hold</button>
-            <br><br>
-            <div class="roll">
-                <h5><span id="dice1">0</span> </h5>
-            </div>
-            <br>
-            <div class="lower-block">
-                <p><b>Current Score:</b><span id="current1"></span> </p>
-                <div id="myDiv1"></div><br>
-                <p><b> Round Score:</b><span id="roundTotal1"></span> </p>
-            </div>
-        </div>
-        <div class="col-sm-4" id="player2">
-            <h2><span id="secondPlayerName"></span></h2>
-            <div class="pigs"><img class="pig-pic" src="img/pig-avatar2.jpg"><br></div>
-            <button id="player2Turn" class="btn btn-danger" name="button">Roll</button>
-            <button id="player2Hold" class="btn btn-danger" name="button">Hold</button>
-            <br><br>
-            <div class="roll">
-                <h5><span id="dice2">0</span></h5>
-            </div>
-            <br>
-            <div class="lower-block">
-                <p><b>Current Score:</b> <span id="current2"></span> </p>
-                <div id="myDiv2"></div><br>
-                <p><b> Round Score:</b><span id="roundTotal2"></span> </p>
-            </div>
-        </div>
-        <div class="col-sm-1"></div>
-    </div>
+        
+        
+    
 </body>
 
 </html>
